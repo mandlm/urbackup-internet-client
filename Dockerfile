@@ -9,7 +9,10 @@ RUN TF=`mktemp` &&\
 
 EXPOSE 35621/TCP 35622/UDP 35623/TCP
 
+COPY prefilebackup /usr/local/etc/urbackup/
+RUN chmod 0700 /usr/local/etc/urbackup/prefilebackup
+
 WORKDIR /app
-COPY run.sh /app
+COPY run.sh /app/
 
 CMD ["sh", "run.sh"]

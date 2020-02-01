@@ -1,8 +1,8 @@
 from debian:stretch
 
-ARG SERVER_NAME
-ARG CLIENT_NAME
-ARG CLIENT_KEY
+ARG SERVER_NAME=urbackup-server
+ARG CLIENT_NAME=urbackup-client
+ARG CLIENT_KEY=secret_key
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y mktemp wget
 

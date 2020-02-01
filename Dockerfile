@@ -9,8 +9,6 @@ RUN TF=`mktemp` &&\
 
 EXPOSE 35621/TCP 35622/UDP 35623/TCP
 
-HEALTHCHECK CMD urbackupclientbackend status
-
 WORKDIR /app
 COPY run.sh /app
 

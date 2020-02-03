@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-if [[ -z "$DO_FTP_BACKUP" ]]; then
+if [[ -n "$DO_FTP_BACKUP" ]]; then
 	sh ftp_backup.sh
 fi
 
-if [[ -z "$DO_MYSQL_BACUP" ]]; then
+if [[ -n "$DO_MYSQL_BACKUP" ]]; then
 	sh mysql_backup.sh
 fi

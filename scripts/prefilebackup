@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 if [[ -n "$DO_FTP_BACKUP" ]]; then
-	sh ftp_backup.sh
+	sh /usr/local/etc/urbackup/ftp_backup.sh
 fi
 
 if [[ -n "$DO_MYSQL_BACKUP" ]]; then
-	sh mysql_backup.sh
+	sh /usr/local/etc/urbackup/mysql_backup.sh
 fi

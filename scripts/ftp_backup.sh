@@ -1,16 +1,8 @@
 #!/usr/bin/env bash
 
-if [[ -z "$DO_FTP_BACKUP" ]]; then
-	exit 0
-fi
-
-# DISTANT DIRECTORY
 REMOTE_DIR="/"
+LOCAL_DIR="/backup/ftp"
 
-#LOCAL DIRECTORY
-LOCAL_DIR="/backup"
-
-# RUNTIME!
 echo
 echo "Starting download $REMOTE_DIR from $FTP_HOST to $LOCAL_DIR"
 date

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+if [[ -z "$DO_FTP_BACKUP" ]]; then
+	sh ftp_backup.sh
+fi
+

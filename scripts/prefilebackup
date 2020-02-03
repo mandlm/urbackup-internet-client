@@ -4,3 +4,6 @@ if [[ -z "$DO_FTP_BACKUP" ]]; then
 	sh ftp_backup.sh
 fi
 
+if [[ -z "$DO_MYSQL_BACUP" ]]; then
+	sh mysql_backup.sh
+fi
